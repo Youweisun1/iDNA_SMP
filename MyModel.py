@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from Transformer import *
 
-class Semisup6mA(nn.Module):
+class iDNA_SMP(nn.Module):
     def __init__(self, channels=32, r=4):
         super().__init__()
         self.conv1 = nn.Sequential(
@@ -69,6 +69,7 @@ class Semisup6mA(nn.Module):
         # with torch.no_grad():
         output = self.forward(x,xpos)
         return self.block2(output)
+
 
 
 
