@@ -1,13 +1,13 @@
 iDNA_SMP: A Semi-Supervised Model for 6mA Detection
 Overview
-Semisup6mA is a deep learning model designed for detecting 6mA modifications in DNA sequences. This implementation combines convolutional neural networks (CNNs) with transformer architecture to leverage both sequence information and positional weight matrix (PWM) data for improved prediction accuracy.
+iDNA_SMP is a deep learning model designed for detecting 6mA modifications in DNA sequences. This implementation combines convolutional neural networks (CNNs) with transformer architecture to leverage both sequence information and positional weight matrix (PWM) data for improved prediction accuracy.
 
 Requirements：
 Python 3.8
 PyTorch 2.0.0
 
 Model Architecture：
-The Semisup6mA model consists of:
+The iDNA_SMP model consists of:
 Three convolutional blocks (Conv1d with ReLU and Dropout)
 Positional weight matrix processing layer
 Transformer encoder component
@@ -30,7 +30,7 @@ Model Initialization
 import torch
 import torch.nn as nn
 from Transformer import *  
-model = Semisup6mA(channels=32, r=4)
+model = iDNA_SMP(channels=32, r=4)
 Forward Pass
 //x: DNA sequence input [batch_size, 4, sequence_length]
 //xpos: Positional weight matrix [batch_size, 4, 41]
