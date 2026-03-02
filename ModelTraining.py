@@ -15,7 +15,7 @@ import matplotlib
 from sklearn import metrics
 matplotlib.use('Agg')
 from data_processing import load_data,generate_perturbed_data
-from MyModel import Semisup6mA
+from MyModel import iDNA_SMP
 from sklearn.model_selection import KFold
 np.random.seed(1377)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
