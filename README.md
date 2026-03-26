@@ -1,7 +1,7 @@
 iDNA_SMP: A Semi-Supervised Model for DNA Methylation Detection
 
-
 Overview
+
 iDNA_SMP is a deep learning model designed for detecting 6mA modifications in DNA sequences. This implementation combines convolutional neural networks (CNNs) with transformer architecture to leverage both sequence information and positional weight matrix (PWM) data for improved prediction accuracy.
 
 Requirements：
